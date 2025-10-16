@@ -102,7 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
               if(newUser == 'Hornet' && newPass == 'Shaw') {
                 context.go('/bankinfo');
               }
-            }, child: Text('login')),
+            }, child: Text('git gud')),
           ],
         ),
       ]
@@ -148,7 +148,7 @@ class _BankInfoState extends State<BankInfo> {
                   child: TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        hintText: 'money',
+                        hintText: 'rosary',
                       ), onChanged: (text2) {
                     setState(() {
                       amount = double.parse(text2);
@@ -164,13 +164,13 @@ class _BankInfoState extends State<BankInfo> {
                       cash = cash + amount;
                     }
                   });
-                }, child: Text('add moneys'),
+                }, child: Text('add rosarys'),
                 ),
                 ElevatedButton(onPressed:() {
                   setState(() {
                     cash = cash - amount;
                   });
-                }, child: Text('take moneys'),
+                }, child: Text('take rosarys'),
                 ),],
             ),
             Column(
@@ -182,7 +182,7 @@ class _BankInfoState extends State<BankInfo> {
                   child: TextField(
                       decoration: InputDecoration(
                         border: OutlineInputBorder(),
-                        hintText: 'money',
+                        hintText: 'rosary',
                       ), onChanged: (text3) {
                     setState(() {
                       amount2 = double.parse(text3);
@@ -195,7 +195,7 @@ class _BankInfoState extends State<BankInfo> {
                     cash2 = amount2 + cash2;
                     cash = amount2 + cash;
                   });
-                }, child: Text('loan for moneys'),
+                }, child: Text('loan for rosarys'),
                 ),
                 ElevatedButton(onPressed:() {
                   setState(() {
